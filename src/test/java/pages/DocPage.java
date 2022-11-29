@@ -5,11 +5,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-import java.util.List;
+public class DocPage {
 
-public class DoctorPage {
-
-    public DoctorPage() {
+    public DocPage() {
         PageFactory.initElements(Driver.getDriver(), this);
 
     }
@@ -56,7 +54,7 @@ public class DoctorPage {
     @FindBy(xpath = "//*[@class='alert alert-warning']")
     public WebElement appointmentsMesaji;
 
-    @FindBy(xpath = "//*[@class='Toastify__toast-body']")
+    @FindBy(xpath = "//div[contains(text(),'Days between begin date and end date must be max 15 days')]")
     public WebElement appointmentsHataMesaji;
 
 
