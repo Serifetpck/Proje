@@ -15,7 +15,7 @@ import org.junit.runner.RunWith;
 
         features = "src/test/resources/features",
         glue = "stepDefinitions",
-        tags = "@TC01",
+        tags = "@TC02",
         dryRun = false
 
 )
